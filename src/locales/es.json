@@ -1,5 +1,14 @@
 {
-    "header": {
-        "title": "hola"
-    }
+  "header": {
+    "title": "hola"
+  },
+  "overview": {
+    "investStartups": "Invierte en startups de forma inteligente",
+    "complexity": "La complejidad de la simplicidad",
+    "prismCred": "Prism cred kickstarter, rampas de gochujang sostenibles bushwick umami Migas.",
+    "service": "Servicio increíble. Distingue nuestro negocio",
+    "greatThings": "Haz grandes cosas todos los días con facilidad",
+    "experienceBenefits": "Experimente los beneficios de la gestión de inversiones profesional",
+    "startInvesting": "Comience a invertir ahora"
+  }
 }
