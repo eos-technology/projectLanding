@@ -14,7 +14,7 @@ if (settings) {
     (obg: any) => obg.name == "Modo Oscuro"
   );
   if (mode) {
-    defaultTheme = mode.status == true ? "light" : "dark";
+    defaultTheme = mode.status == true ? "light" : "light";
   }
 }
 

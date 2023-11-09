@@ -11,7 +11,7 @@
         <a class="link-medium txt-black" href="#">{{ $t('menu.startup') }}</a>
       </li>
       <li >
-        <a class="link-medium txt-black" href="#">{{ $t('menu.overview') }}</a>
+        <a class="link-medium txt-black" href="#overview">{{ $t('menu.overview') }}</a>
       </li>
     </ul>
   </nav>

@@ -1,6 +1,6 @@
 <template>
   <!-- Black section -->
-  <section class="overview bg-black text-white">
+  <section id="overview" class="overview bg-black text-white">
     <h2 class="text-h2 text-center text-center mx-auto pb-14">
       {{ $t("overview.investStartups") }}
     </h2>

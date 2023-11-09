@@ -1,5 +1,5 @@
 <template> 
-  <div class="header__menu-mobile" @click="burger=!burger">
+  <div class="header__menu-mobile" @click="burger=!burger, $emit('burger')">
     <div class="burger" :class="{'out': !burger}">
       <div class="line"></div>
       <div class="burger-click">
@@ -22,7 +22,7 @@
         <a class="link-medium txt-black" href="#">{{ $t('menu.startup') }}</a>
       </li>
       <li @click="burger=true" class="clip clip-3">
-        <a class="link-medium txt-black" href="#">{{ $t('menu.overview') }}</a>
+        <a class="link-medium txt-black" href="#overview">{{ $t('menu.overview') }}</a>
       </li>
     </ul>
 
@@ -38,8 +38,11 @@
 <script lang='ts' setup>
 import { ref } from 'vue';
 
+defineEmits(['burger'])
  
 const burger = ref(true)
+
+
 </script> 
 
 <style lang='scss' scoped> 
@@ -63,6 +66,7 @@ const burger = ref(true)
   &-click{
     .line2{
       width: 15px;
+      transition: all .5s ease-in-out;
     }
 
     .line2:first-child{
@@ -102,15 +106,15 @@ const burger = ref(true)
 }
 
 .menu-mobile{
-  position: absolute;
-  top: 81px;
+  position: fixed;
+  top: 80px;
   right: 0;
   left: 0;
   bottom: 0;
   z-index: -1;
 
   width: 100%;
-  height: calc(100vh - 80px);
+  height: calc(100dvh - 50px);
   opacity: 0;
   padding: 0 38.85px;
   padding-bottom: 38.85px;

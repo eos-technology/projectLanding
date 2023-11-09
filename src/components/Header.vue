@@ -1,5 +1,5 @@
 <template>  
-  <header id="header">
+  <header id="header" :class="{ 'scrolled': isScrolled }">
     <div class="header">
       <div class="header__logo">
         <a href="#home">
@@ -9,17 +9,19 @@
 
       <menu-app />
 
-      <menu-mobile/>
+      <menu-mobile @burger="burger=!burger"/>
 
     </div>
   </header>
 </template>
 
 <script lang='ts' setup> 
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
 import MenuApp from './MenuApp.vue';
 import MenuMobile from './MenuMobile.vue';
 
+const burger = ref(false)
+const isScrolled = ref(false)
 
 onMounted(() => {
   const header = document.getElementById("header");
@@ -27,15 +29,15 @@ onMounted(() => {
 
   if (header) {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 80) {
-        header.classList.add('scrolled')
+      if (window.scrollY > 80 && !isScrolled.value && !burger.value) {
+        isScrolled.value = true;
       }
 
       if (window.scrollY < scrollPosition) {
-        header.classList.remove('scrolled')
+        isScrolled.value = false;
       }
 
-      scrollPosition = window.scrollY
+      scrollPosition = window.scrollY;
     });
   } else {
     console.error("Element with ID 'header' not found");
@@ -49,7 +51,7 @@ header{
   box-shadow: 0 1px 0 rgba(0,0,0,.05);
   background-color: #FFF;
 
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -72,6 +74,11 @@ header{
 
   @media (min-width: 1600px){
     margin: 0 auto;
+  }
+
+
+  @media (max-width: 920px){
+    margin: 0 20px;
   }
 
   &__logo{
