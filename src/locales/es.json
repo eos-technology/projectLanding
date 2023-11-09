@@ -1,5 +1,32 @@
 {
     "header": {
         "title": "hola"
+    },
+    "learn": {
+        "title": "Aprende sobre invertir en startups",
+        "subtitle": "Invertir puede ser una excelente manera de hacer crecer tu dinero, pero puede ser complicado comenzar. Catch ofrece un acceso fácil a información sobre la inversión en startups, para que puedas tomar",
+        "btn": "Aprende más"
+    },
+    "option": {
+        "title": "Comienza tu viaje empresarial con las inversiones adecuadas",
+        "titleCard1": "Aumenta el Valor del Dinero",
+        "textCard1": "Tu dinero será más útil y rentable a largo plazo. A través de la inversión, manejas tu dinero y puedes aumentar su valor.",
+        "titleCard2": "Lograr tu Libertad",
+        "textCard2": "La Libertad Financiera es una condición en la que eres financieramente independiente. Significa que tus ingresos son suficientes para cubrir tus necesidades.",
+        "titleCard3": "Abre el conocimiento",
+        "textCard3": "Tu comprensión de la economía y las finanzas será más amplia. Es posible que te conviertas en un planificador financiero confiable."
+    },
+    "startup": {
+        "title": "Invierte en startups con facilidad",
+        "subtitle": "Invertir no tiene que ser difícil. Hacemos que sea fácil invertir en tu futuro con opciones de inversión simples y de bajo costo, y asesoramiento personalizado.",
+        "item1": "Soluciones inteligentes para el mundo automatizado",
+        "item2": "Haz grandes cosas todos los días",
+        "item3": "Construyendo un futuro mejor juntos"
+    },
+    "invest": {
+        "title": "Invierte de manera inteligente, segura y hoy",
+        "subtitle": "Invertir no tiene que ser difícil. Hacemos que sea fácil invertir en tu futuro con opciones de inversión simples y de bajo costo, y asesoramiento personalizado.",
+        "btn": "Comienza a invertir ahora"
     }
+    
 }
