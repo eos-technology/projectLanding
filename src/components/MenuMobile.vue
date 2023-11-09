@@ -109,10 +109,11 @@ const burger = ref(true)
   bottom: 0;
   z-index: -1;
 
-  height: calc(100vh - 100px) ;
+  width: 100%;
+  height: calc(100vh - 80px);
   opacity: 0;
-  padding: 0 10px;
-  margin: 0 38.85px;
+  padding: 0 38.85px;
+  padding-bottom: 38.85px;
   background-color: #FFF;
 
   display: flex;
@@ -121,6 +122,10 @@ const burger = ref(true)
 
   @media (min-width: 1025px){
     display: none;
+  }
+
+  &.in{
+    opacity: 1;
   }
 
   ul{
@@ -136,9 +141,6 @@ const burger = ref(true)
     }
   }
 
-  &.in{
-    opacity: 1;
-  }
 
   &__buttons{
     display: flex;

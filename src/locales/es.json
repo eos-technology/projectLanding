@@ -10,6 +10,16 @@
     "login":"Iniciar sesión",
     "singup":"Registrarse"
   },
+  "home": {
+    "maximizeReturns": "Maximiza los rendimientos",
+    "minimizeRisks": "Minimiza los riesgos",
+    "investSmarter": "Invierte de manera más inteligente",
+    "text1":"Nuestro equipo de expertos está comprometido en guiarte en cada paso de tu trayecto de inversión, ya sea que seas un inversor experimentado o estés comenzando.",
+    "startInvest":"Comienza a Invertir Ahora",
+    "amountRaised":"Cantidad recaudada",
+    "minimum":"Mínimo",
+    "valuationCap":"Valoración máxima"
+  },
   "overview": {
     "investStartups": "Invierte en startups de forma inteligente",
     "complexity": "La complejidad de la simplicidad",

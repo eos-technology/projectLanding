@@ -2,7 +2,7 @@
   <header id="header">
     <div class="header">
       <div class="header__logo">
-        <a href="#">
+        <a href="#home">
           <img src="../assets/img/pagebolt-logo.webp" alt="">
         </a>
       </div>
@@ -92,7 +92,6 @@ header{
   transform: translateY(-20%);
   opacity: 0;
   z-index: -20;
-  background-color: transparent;
 }
 </style>
 

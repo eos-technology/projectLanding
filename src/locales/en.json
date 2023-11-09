@@ -10,6 +10,16 @@
     "login":"Login",
     "singup":"Sing Up"
   },
+  "home":{
+    "maximizeReturns":"Maximize returns",
+    "minimizeRisks":"Minimize risks",
+    "investSmarter":"Invest smarter",
+    "text1":"Our team of experts is committed to guiding you through every step of your investment journey, whether you are an experienced investor or just starting out.",
+    "startInvest":"Start Investing Now",
+    "amountRaised":"Amount Raised",
+    "minimum":"Minimum",
+    "valuationCap":"Valuation cap"
+  },
   "overview": {
     "investStartups": "Invest in startups the smart way",
     "complexity": "The complexity of simplicity",
