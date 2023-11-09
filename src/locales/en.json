@@ -1,5 +1,13 @@
 {
-    "header": {
-        "title": "hello"
-    }
+  "header": {
+    "title": "hello"
+  },
+  "menu": {
+    "investing":"Investing",
+    "options":"Options",
+    "startup":"Startup",
+    "overview":"Overview",
+    "login":"Login",
+    "singup":"Sing Up"
+  }
 }

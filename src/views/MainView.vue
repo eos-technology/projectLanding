@@ -1,8 +1,11 @@
 <template> 
-    <p class="h1-semibold">{{ $t('header.title') }}</p>
+    <Header />
+    <home-section/>
 </template> 
 
 <script lang='ts' setup> 
+import Header from '../components/Header.vue'
+import HomeSection from './sections/HomeSection.vue';
 
 </script> 
 

@@ -12,11 +12,21 @@ body{
 //semibold - 600
 //bold - 700
 
+.txt-black{
+  color: #16171c;
+}
+
 .link-medium{
   font-size: 1.125rem;
   font-weight: 500;
   font-style: normal;
-  line-height: 5rem;
+  text-decoration: none;
+
+  transition: all 0.4s cubic-bezier(0.68, 0.01, 0.58, 0.75);
+
+  &:hover{
+    color: #C8A2D6;
+  }
 }
 
 .txt-regular{

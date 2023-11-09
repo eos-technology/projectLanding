@@ -1,5 +1,13 @@
 {
-    "header": {
-        "title": "hola"
-    }
+  "header": {
+    "title": "hola"
+  },
+  "menu": {
+    "investing": "Invertir",
+    "options":"Opciones",
+    "startup":"Startup",
+    "overview":"Overview",
+    "login":"Iniciar sesión",
+    "singup":"Registrarse"
+  }
 }
