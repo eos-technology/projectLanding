@@ -1,31 +1,58 @@
 {
-    "header": {
-        "title": "hello"
-    },
-    "learn":{
-        "title": "Learn about investing in startups",
-        "subtitle": "Investing can be a great way to grow your money, but it can be tricky to get started. Catch offers easy access to information about investing in startups – so you can make",
-        "btn": "Learn more"
-    },
-    "option":{
-        "title": "Get started on your startup journey with the right investments",
-        "titleCard1": "Increase Value for Money",
-        "textCard1": "Your money will be more useful and profitable in the long run. Through investing, you manage your money and can increase the value of the money you have.",
-        "titleCard2": "Achieving Your Freedom",
-        "textCard2": "Financial Freedom is a condition in which you are financially independent. It means that your income is sufficient to meet your needs.",
-        "titleCard3": "Open the knowledge",
-        "textCard3": "Your insight into the economy and finance will be wider. It is possible, you will become a reliable financial planner."
-    },
-    "startup": {
-        "title": "Invest in startups with ease",
-        "subtitle": "Investing doesn’t have to be hard. We make it easy to invest for your future with simple, low-cost investment options and personalized advice.",
-        "item1": "Smart Solutions for the automated world",
-        "item2": "Do great things every day",
-        "item3": "Building a better Future together"
-    },
-    "invest": {
-        "title": "Invest smart, Invest secure, Invest today",
-        "subtitle": "Investing doesn’t have to be hard. We make it easy to invest for your future with simple, low-cost investment options and personalized advice.",
-        "btn": "Start Investing Now"
-    }
+  "header": {
+    "title": "hello"
+  },
+  "learn": {
+    "title": "Learn about investing in startups",
+    "subtitle": "Investing can be a great way to grow your money, but it can be tricky to get started. Catch offers easy access to information about investing in startups – so you can make",
+    "btn": "Learn more"
+  },
+  "option": {
+    "title": "Get started on your startup journey with the right investments",
+    "titleCard1": "Increase Value for Money",
+    "textCard1": "Your money will be more useful and profitable in the long run. Through investing, you manage your money and can increase the value of the money you have.",
+    "titleCard2": "Achieving Your Freedom",
+    "textCard2": "Financial Freedom is a condition in which you are financially independent. It means that your income is sufficient to meet your needs.",
+    "titleCard3": "Open the knowledge",
+    "textCard3": "Your insight into the economy and finance will be wider. It is possible, you will become a reliable financial planner."
+  },
+  "startup": {
+    "title": "Invest in startups with ease",
+    "subtitle": "Investing doesn’t have to be hard. We make it easy to invest for your future with simple, low-cost investment options and personalized advice.",
+    "item1": "Smart Solutions for the automated world",
+    "item2": "Do great things every day",
+    "item3": "Building a better Future together"
+  },
+  "invest": {
+    "title": "Invest smart, Invest secure, Invest today",
+    "subtitle": "Investing doesn’t have to be hard. We make it easy to invest for your future with simple, low-cost investment options and personalized advice.",
+    "btn": "Start Investing Now"
+  },
+  "menu": {
+    "investing": "Investing",
+    "options": "Options",
+    "startup": "Startup",
+    "overview": "Overview",
+    "login": "Login",
+    "singup": "Sing Up"
+  },
+  "home": {
+    "maximizeReturns": "Maximize returns",
+    "minimizeRisks": "Minimize risks",
+    "investSmarter": "Invest smarter",
+    "text1": "Our team of experts is committed to guiding you through every step of your investment journey, whether you are an experienced investor or just starting out.",
+    "startInvest": "Start Investing Now",
+    "amountRaised": "Amount Raised",
+    "minimum": "Minimum",
+    "valuationCap": "Valuation cap"
+  },
+  "overview": {
+    "investStartups": "Invest in startups the smart way",
+    "complexity": "The complexity of simplicity",
+    "prismCred": "Prism cred kickstarter, bushwick umami sustainable gochujang ramps migas.",
+    "service": "Amazing service. It sets our business apart",
+    "greatThings": "Do great things every day with ease",
+    "experienceBenefits": "Experience the benefits of professional investment management",
+    "startInvesting": "Start investing now"
+  }
 }

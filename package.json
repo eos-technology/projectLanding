@@ -6,7 +6,7 @@
     "build": "run-p type-check build-only",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "build-only": "vite build",
-    "dev": "vite",
+    "dev": "vite --host",
     "format": "prettier --write src/",
     "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/locales/**/*.json\"",
     "preview": "vite preview",
@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@intlify/vue-i18n-loader": "^3.0.0",
+    "@mdi/font": "^7.3.67",
     "@rushstack/eslint-patch": "^1.2.0",
     "@tsconfig/node18": "^2.0.1",
     "@types/luxon": "^3.3.0",

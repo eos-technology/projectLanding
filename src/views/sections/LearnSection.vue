@@ -1,23 +1,29 @@
 <template>
   <section class="learn">
-    <div class="learn__img">
-      <img src="@/assets/img/profit.webp" alt="" class="learn__img-profit" />
-      <img src="@/assets/img/woman-card.webp" alt="" class="learn__img-woman" />
-      <img
-        src="@/assets/img/portfolioValue.webp"
-        alt=""
-        class="learn__img-portfolio"
-      />
-    </div>
-    <div class="learn__text">
-      <h2 class="h2-medium">{{ $t('learn.title') }}</h2>
-      <p class="txt-regular">
-        {{ $t('learn.subtitle') }}
-      </p>
-      <button class="learn__text-btn">
-        <span>{{ $t('learn.btn') }}</span>
-        <i aria-hidden="true" class="fas fa-arrow-right"></i>
-      </button>
+    <div class="learn__container">
+      <div class="learn__img">
+        <img src="@/assets/img/profit.webp" alt="" class="learn__img-profit" />
+        <img
+          src="@/assets/img/woman-card.webp"
+          alt=""
+          class="learn__img-woman"
+        />
+        <img
+          src="@/assets/img/portfolioValue.webp"
+          alt=""
+          class="learn__img-portfolio"
+        />
+      </div>
+      <div class="learn__text">
+        <h2 class="h2-medium">{{ $t("learn.title") }}</h2>
+        <p class="txt-regular">
+          {{ $t("learn.subtitle") }}
+        </p>
+        <button class="learn__text-btn">
+          <span>{{ $t("learn.btn") }}</span>
+          <i aria-hidden="true" class="fas fa-arrow-right"></i>
+        </button>
+      </div>
     </div>
   </section>
 </template>
@@ -26,16 +32,26 @@
   position: relative;
   background-color: black;
   padding: 7.5rem 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 150px;
 
-  @media (max-width: 1290px) {
-    gap: 50px;
-    align-items: center;
-    flex-direction: column-reverse;
-    padding: 60px 50px;
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    @media (min-width: 1600px) {
+      margin: 0 auto;
+      max-width: 1600px;
+    }
+
+    @media (max-width: 920px) {
+      flex-direction: column-reverse;
+      gap: 2rem;
+      margin: 0 38.85px;
+      padding: 0 10px;
+      gap: 4rem;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__img {
@@ -45,14 +61,12 @@
     height: 555.078px;
 
     @media (max-width: 700px) {
-        height: 430px;
-     
-      }
+      height: 430px;
+    }
 
-      @media (max-width: 500px) {
-        height: 270px;
-     
-      }
+    @media (max-width: 500px) {
+      height: 270px;
+    }
 
     &-profit {
       position: absolute;
@@ -86,8 +100,8 @@
       }
 
       @media (max-width: 500px) {
-        height: 154px;
-        width: 209px;
+        height: 184px;
+        width: 259px;
       }
     }
 
@@ -107,9 +121,10 @@
       }
 
       @media (max-width: 500px) {
+        bottom: 0px;
         margin-right: -30px;
-        height: 146px;
-        width: 112px;
+        height: 176px;
+        width: 130px;
       }
     }
   }
@@ -121,6 +136,10 @@
     color: white;
     width: 100%;
     max-width: 500px;
+
+    @media (max-width: 920px) {
+      max-width: 100%;
+    }
 
     &-btn {
       display: flex;

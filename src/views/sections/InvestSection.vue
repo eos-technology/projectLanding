@@ -1,25 +1,27 @@
 <template>
   <section class="learn">
-    <div class="learn__text">
-      <h2 class="h2-medium">{{ $t('invest.title') }}</h2>
-      <p class="txt-regular">
-        {{ $t('invest.subtitle') }}
-      </p>
-      <button class="learn__text-btn">
-        <span>{{ $t('invest.btn') }}</span>
-        <i aria-hidden="true" class="fas fa-arrow-right"></i>
-      </button>
-    </div>
-    <div class="learn__img">
-      <img src="@/assets/img/profit.webp" alt="" class="learn__img-profit" />
-      <img src="@/assets/img/men2-crad.webp" alt="" class="learn__img-woman" />
-      <img
-        src="@/assets/img/most-popular.webp"
-        alt=""
-        class="learn__img-portfolio"
-      />
-      <div class="learn__img-icon">
-        <i aria-hidden="true" class="fas fa-pie-chart"></i>
+    <div class="learn__container">
+      <div class="learn__text">
+        <h2 class="h2-medium">{{ $t('invest.title') }}</h2>
+        <p class="txt-regular">
+          {{ $t('invest.subtitle') }}
+        </p>
+        <button class="learn__text-btn">
+          <span>{{ $t('invest.btn') }}</span>
+          <i aria-hidden="true" class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+      <div class="learn__img">
+        <img src="@/assets/img/profit.webp" alt="" class="learn__img-profit" />
+        <img src="@/assets/img/men2-crad.webp" alt="" class="learn__img-woman" />
+        <img
+          src="@/assets/img/most-popular.webp"
+          alt=""
+          class="learn__img-portfolio"
+        />
+        <div class="learn__img-icon">
+          <i aria-hidden="true" class="fas fa-pie-chart"></i>
+        </div>
       </div>
     </div>
   </section>
@@ -29,15 +31,33 @@
   border-top: 1px solid rgb(236, 236, 236);
   position: relative;
   background-color: #f4f4f4;
-  padding: 6rem 50px;
-  display: flex;
-  justify-content: center;
-  gap: 200px;
+  padding: 6rem 0px;
 
-  @media (max-width: 1290px) {
-    gap: 50px;
-    align-items: center;
-    flex-direction: column;
+  @media(max-width: 500px){
+    padding: 2rem 0px;
+  }
+
+ 
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    @media (min-width: 1600px) {
+      margin: 0 auto;
+      max-width: 1600px;
+    }
+
+    @media (max-width: 920px) {
+      flex-direction: column;
+      gap: 2rem;
+      margin: 0 38.85px;
+      padding: 0 10px;
+      gap: 4rem;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__img {
@@ -163,6 +183,10 @@
     color: rgb(0, 0, 0);
     width: 100%;
     max-width: 500px;
+
+    @media (max-width: 920px) {
+      max-width: 100%;
+    }
 
     &-btn {
       display: flex;

@@ -1,45 +1,47 @@
 <template>
   <section class="learn">
-    <div class="learn__img">
-      <div class="learn__img-cards">
-        <img src="@/assets/img/spacex.webp" alt="" class="learn__img-space" />
+    <div class="learn__container">
+      <div class="learn__img">
+        <div class="learn__img-cards">
+          <img src="@/assets/img/spacex.webp" alt="" class="learn__img-space" />
+          <img
+            src="@/assets/img/digitalocean.webp"
+            alt=""
+            class="learn__img-space"
+          />
+          <img src="@/assets/img/facebook.webp" alt="" class="learn__img-space" />
+        </div>
+        <img src="@/assets/img/phone.webp" alt="" class="learn__img-woman" />
         <img
-          src="@/assets/img/digitalocean.webp"
+          src="@/assets/img/total-balance.webp"
           alt=""
-          class="learn__img-space"
+          class="learn__img-portfolio"
         />
-        <img src="@/assets/img/facebook.webp" alt="" class="learn__img-space" />
       </div>
-      <img src="@/assets/img/phone.webp" alt="" class="learn__img-woman" />
-      <img
-        src="@/assets/img/total-balance.webp"
-        alt=""
-        class="learn__img-portfolio"
-      />
-    </div>
-    <div class="learn__text pt-4">
-      <h2 class="h2-medium">{{ $t('startup.title') }}</h2>
-      <p class="txt-regular">
-        {{ $t('startup.subtitle') }}
-      </p>
-      <div class="learn__text-list">
-        <div class="d-flex align-center">
-          <div class="learn__text-icon mr-4">
-            <i aria-hidden="true" class="fas fa-check"></i>
+      <div class="learn__text pt-4">
+        <h2 class="h2-medium">{{ $t('startup.title') }}</h2>
+        <p class="txt-regular">
+          {{ $t('startup.subtitle') }}
+        </p>
+        <div class="learn__text-list">
+          <div class="d-flex align-center">
+            <div class="learn__text-icon mr-4">
+              <i aria-hidden="true" class="fas fa-check"></i>
+            </div>
+            <h4 class="h4-semibold">{{ $t('startup.item1') }}</h4>
           </div>
-          <h4 class="h4-semibold">{{ $t('startup.item1') }}</h4>
-        </div>
-        <div class="d-flex align-center">
-          <div class="learn__text-icon mr-4">
-            <i aria-hidden="true" class="fas fa-check"></i>
+          <div class="d-flex align-center">
+            <div class="learn__text-icon mr-4">
+              <i aria-hidden="true" class="fas fa-check"></i>
+            </div>
+            <h4 class="h4-semibold">{{ $t('startup.item2') }}</h4>
           </div>
-          <h4 class="h4-semibold">{{ $t('startup.item2') }}</h4>
-        </div>
-        <div class="d-flex align-center">
-          <div class="learn__text-icon mr-4">
-            <i aria-hidden="true" class="fas fa-check"></i>
+          <div class="d-flex align-center">
+            <div class="learn__text-icon mr-4">
+              <i aria-hidden="true" class="fas fa-check"></i>
+            </div>
+            <h4 class="h4-semibold">{{ $t('startup.item3') }}</h4>
           </div>
-          <h4 class="h4-semibold">{{ $t('startup.item3') }}</h4>
         </div>
       </div>
     </div>
@@ -49,17 +51,34 @@
 .learn {
   position: relative;
   background-color: #f4f4f4;
-  padding: 6rem 30px;
-  display: flex;
-  justify-content: center;
-  gap: 150px;
+  padding: 6rem 0px;
 
-  @media (max-width: 1290px) {
-    padding: 2rem 30px;
-    gap: 50px;
-    align-items: center;
-    flex-direction: column-reverse;
+  @media(max-width: 500px){
+    padding: 2rem 0px;
   }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    @media (min-width: 1600px) {
+      margin: 0 auto;
+      max-width: 1600px;
+    }
+
+    @media (max-width: 920px) {
+      flex-direction: column-reverse;
+      gap: 2rem;
+      margin: 0 38.85px;
+      padding: 0 10px;
+      gap: 4rem;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+ 
+
 
   &__img {
     position: relative;
@@ -154,6 +173,10 @@
     color: rgb(0, 0, 0);
     width: 100%;
     max-width: 430px;
+
+    @media (max-width: 920px) {
+      max-width: 100%;
+    }
 
     &-list {
       display: flex;
