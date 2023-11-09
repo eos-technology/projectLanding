@@ -9,5 +9,14 @@
     "overview":"Overview",
     "login":"Login",
     "singup":"Sing Up"
+  },
+  "overview": {
+    "investStartups": "Invest in startups the smart way",
+    "complexity": "The complexity of simplicity",
+    "prismCred": "Prism cred kickstarter, bushwick umami sustainable gochujang ramps migas.",
+    "service": "Amazing service. It sets our business apart",
+    "greatThings": "Do great things every day with ease",
+    "experienceBenefits": "Experience the benefits of professional investment management",
+    "startInvesting": "Start investing now"
   }
 }
